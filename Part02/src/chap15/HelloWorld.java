@@ -16,6 +16,7 @@ public class HelloWorld {
 		
 		System.out.println("GIT HUB 222 수정사항 확인");
 		
+		System.out.println("Local eclipse 수정사항 확인1");
 	}
 
 }
