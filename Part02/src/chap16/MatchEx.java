@@ -1,3 +1,5 @@
+package chap16;
+
 import java.util.Arrays;
 
 public class MatchEx {
@@ -7,7 +9,17 @@ public class MatchEx {
     boolean result = Arrays.stream(intArr)
     .allMatch(a->a%2 == 0);
     
-    System.out.println("모두2의배수인가 " + result);
+    System.out.println("모두 2 의 배수인가 " + result);
+   
+    result = Arrays.stream(intArr)
+	//.allMatch(a->a%3 == 0);
+	.anyMatch(a->a%3 == 0);
+    	    
+    System.out.println("하나라도 3 의 배수인가 " + result);
+        
+    result = Arrays.stream(intArr)
+    .noneMatch(a->a%3 == 0);
+    System.out.println("3의 배수가 없는가 " + result);
     
   }
 }
