@@ -14,7 +14,8 @@ public class FromFileContentEx {
 
 	public static void main(String[] args) throws IOException {
 		
-		Path path = Paths.get("src\\chap16\\linedata.txt");
+		//Path path = Paths.get("src\\chap16\\linedata.txt");
+		Path path = Paths.get("src/chap16/linedata.txt");
 		Stream<String> stream;
 		
 		stream = Files.lines(path, Charset.defaultCharset());
